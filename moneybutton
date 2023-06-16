@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Money Button Example</title>
+  <script src="https://www.******.com/moneybutton.js"></script>
+</head>
+<body>
+  <h1>Money Button Example</h1>
+  <p>Click the button below to send money:</p>
+  <div id="money-button"></div>
+  <script>
+    const mb = new MoneyButton({
+      to: 'your-money-button-id',
+      amount: '0.01',
+      currency: 'USD',
+      label: 'Send Money'
+    });
+    mb.render('#money-button');
+  </script>
+</body>
+</html>
